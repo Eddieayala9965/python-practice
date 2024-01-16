@@ -4,10 +4,10 @@ def letterHistogram(letters):
 
     for letter in letters:
         if letter.isalpha():
-            if letter not in histogram:
-                histogram[letter] = 1;
-            else: 
+            if letter in histogram:
                 histogram[letter] += 1;
+            else: 
+                histogram[letter] = 1;
 
     return histogram;    
 
